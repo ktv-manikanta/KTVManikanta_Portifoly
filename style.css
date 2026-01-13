@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+#first:hover{
+      color:#d8b400;
+}
+#first {
+    color: white;
+    font-family:Roboto;
+    font-weight:10px;
+    
+}
+
+#name {
+    color: white;
+    font-style:italic;
+}
+
+.bg-container {
+    background-color:rgb(34, 26, 26);
+    overflow-x: hidden;
+}
+.gmail{
+    color:white;
+}
+
+
+.heading-tab {
+    margin-top: 130px;
+    color: white;
+}
+
+.startingpar {
+    font-size: 15px;
+    font-family: roboto;
+    font-weight: bold;
+    margin-top:100px;
+
+}
+
+.first-main-heading {
+    font-family: roboto;
+    font-size: 50px;
+    color: #d8b400;
+    font-weight:bold;
+    margin-top:0px;
+    padding-top:0px;
+}
+
+.pag-home {
+    font-family: roboto;
+    font-size: 20px;
+}
+.heading-part{
+    color:white;
+    margin-top:100px;
+   margin-left:0px;
+}
+.button{
+    height:45px;
+    width:150px;
+    font-size:17px;
+    font-family:roboto;
+    border-style:solid;
+    border-color: #d8b400;
+    border-width:3px;
+    border-radius:38px;
+    background-color: transparent;
+    color:white;
+    
+}
+.button:hover{
+    border-style:solid;
+    border-color:#d8b400;
+}
+.button2{
+    height:45px;
+    width:150px;
+    font-size:17px;
+    font-family:roboto;
+    border-style:solid;
+    border-color: #d8b400;
+    border-width:3px;
+    border-radius:38px;
+    background-color: transparent;
+    color:white;
+    border-color:gray;
+    
+}
+.button2:active{
+    border-style:solid;
+    border-color:#d8b400;
+}
+.mani-image {
+    margin-top: 100px;
+    margin-left:20px;
+    height: 330px; /* slightly larger to fit image */
+    width: 330px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 50%; /* perfect circle */
+    border-width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* keeps zoomed image inside border */
+}
+
+.zoom-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; /* keeps image circular */
+    transition: transform 0.5s ease;
+}
+
+.zoom-img:hover {
+    transform: scale(1.2); /* zoom only the image */
+    cursor: pointer;
+}
+.icons{
+    padding:20px;
+
+}
+.body {
+      background-color: #000;
+      text-align: center;
+      padding-top: 100px;
+    }
+.gmail i {
+    
+    display: inline-block;
+    transform: rotate(0deg); /* This stays rotated all the time */
+}
+.icons a i {
+    display: inline-block;        /* Crucial: Rotation won't work without this */
+    transition: transform 0.6s;   /* Makes the rotation smooth and animated */
+}
+/* 2. Apply the rotation on hover */
+.icons a:hover i {
+    color:#d8b400;
+    transform: rotate(360deg);    /* Change to 45deg, 90deg, etc., as desired */
+}
+.second-main-heading{
+    color: #d8b400;
+    font-family:roboto;
+    font-weight:bold;
+}
+.mani-about-heading{
+    color:white;
+    font-family:roboto;
+}
+.bottom-part{
+    padding:50px;
+
+}
+.bolt{
+    color:#d8b400;
+    margin-top:10px;
+}
+.list{
+    margin:30px;
+    margin-left:0px;
+    margin-top:100px;
+    color:white;
+    list-style-type:none;
+    font-size:18px;
+    padding:10px;
+}
+.buttoncontainer{
+    padding:px;
+}
+.bglight{
+    background-color: aliceblue;
+}
+#bgcontainer {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* This class will be added by JavaScript */
+.dark-theme {
+    background-color: #121212 !important; /* Dark background */
+    color: #ffffff !important;           /* White text */
+}
+
+/* Ensure headings also change color in dark mode */
+.dark-theme .first-main-heading, 
+.dark-theme .second-main-heading,
+.dark-theme .pag-home,
+.dark-theme .mani-about-heading {
+    color: #ffffff !important;
+}
+.button1{
+    background-color:transparent;
+    color:transparent
+}
+#firstlight{
+    background-color:transparent;
+    border: none;
+    color:white;
+    padding:10px
+
+}
+#hr-line{
+    border-color:gray;
+    border-style:solid;
+    border-width:1px;
+}
+.bookm:hover{
+    color:#d8b400;
+
+
+}
+.timeLine {
+    position:relative;
+    border-left: 1px solid #d8b400 ;
+    padding-left: 20px;
+    margin: 10px 0;
+    color:white;
+    
+}
+
+.timeline-item {
+    position:relative;
+    margin-bottom: 70px;
+}
+
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    left: -27px;
+    /* Adjust this value to align the circle */
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color:gray;
+    /* Black circle */
+    border-radius:50%;
+}
+
+.timeline-item h3 {
+    margin: 0;
+}
+
+.timeline-item p {
+    margin: 5px 0 0 ;
+}
+.book{
+    margin:30px;
+}
+.bottom-sh{
+    padding:20px;
+    flex-wrap: wrap;
+    color:white;
+    
+}
+
+.second-main-headings{
+    color: #d8b400;
+    font-family:roboto;
+    font-weight:bold;
+    font-size:30px;
+    padding:8px;
+    margin-left:10px;
+
+}
+.h{
+    padding:20px;
+}
+.p{
+    padding:20px;
+}
+.ph{
+    border-style: solid;
+    border-color:rgb(199, 190, 190);
+    margin-right:30px;
+    margin-left:5px;
+    margin-bottom:20px;
+    border-radius:10px;
+    border-width:1px;
+}
+.container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.hoo{
+    padding:20px;
+
+}
+.timepara-cl{
+    font-size:18px;
+    font-weight:bold;
+    font-family:roboto;
+}
+#bottom-text-skills{
+    text-align:center;
+    color:white;
+}
+.html-skill{
+    border-style:solid;
+    border-color:gray;
+    text-align:center;
+    padding:10px;
+    margin-left:20px;
+    color:#d8b400;
+    border-radius:10px;
+}
+.html-image{
+    font-size:59px;
+    color:#d8b400;
+}
+.skill-main-heading{
+    color:white;
+    font-family:roboto;
+    font-size:24px;
+}
+.html-skill:hover{
+     border-color: #d8b400; /* Border turns gold */
+    color: white !important; /* Text and Icon turn WHITE so you can see the change */
+
+}
+.progress-bar {
+    width: 100%;
+    background: #767676; /* Dark grey background */
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 15px;
+}
+
+/* Add this to make the progress visible */
+.progress-bar span {
+    display: block;      /* Allows the span to take up height/width */
+    height: 100%;       /* Fills the 10px height of the parent */
+    background: orange; /* HTML5 Orange color */
+    transition: width 0.5s ease-in-out; /* Optional: makes it look smooth */
+}
+.framepag{
+    color:white;
+}
+.container-fluids{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+}
+.skill-main-headings{
+    font-family:roboto;
+    font-size:20px;
+    color:rgb(239, 182, 76);
+}
+.span{
+    color:orange;
+}
+
+.form-element {
+    padding: 30px;
+    align-items:center!important;
+    margin-left:300px;
+    
+}
+.textconetbook{
+    margin-left:30%;
+    text-align:center;
+}
+.form-image{
+    width:650px;
+    border: 2px solid gray;
+    border-radius:10px;
+    height:50px;
+}
+.contact-main-heading{
+    text-align:center;
+    font-family:roboto;
+    color:#d8b400;
+}
+.contact-par{
+    color:white;
+    text-align:center;
+    font-family:roboto;
+    font-size:20px;
+}
+
+.contactbutton {
+   text-align:center;
+    margin-top: 20px;
+}
+.buttonbig:focus{
+    border:3px solid orange;
+
+}
+#footer{
+    font-family:roboto;
+    text-align:center !important;
+    display:flex;
+    flex-direction: column;
+}
+.footer-main{
+    font-family:roboto;
+    font-size:16px;
+    color:gray;
+    font-weight:10px;
+}
+.footer-pag{
+    color:white;
+    font-family:roboto;
+}
+.footercopyright{
+    color: gray !important;
+    font-family:roboto;
+    font-size:13px;
+}
+.line{
+    border-color:gray;
+    margin-left:70px;
+    margin-right:70px;
+}
+.error{
+    text-align:left;
+}
+.form-control:focus{
+    border: 3px solid orange;
+}
